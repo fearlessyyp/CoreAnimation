@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CMk-9E-49j">
+                                <rect key="frame" x="87" y="595" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.90384684609999999" green="0.83992125289999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCz-6A-8Hf">
+                                <rect key="frame" x="144" y="107" width="126" height="30"/>
+                                <state key="normal" title="CABasicAnimation"/>
+                                <connections>
+                                    <action selector="basicAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpQ-8A-eCD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpu-Zk-wHq">
+                                <rect key="frame" x="96" y="155" width="199" height="30"/>
+                                <state key="normal" title="CAKeyframeAnimation帧动画"/>
+                                <connections>
+                                    <action selector="keyframeAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pMt-Nf-N43"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E70-dj-Xl8">
+                                <rect key="frame" x="108" y="203" width="176" height="30"/>
+                                <state key="normal" title="CAAnimationGroup组动画"/>
+                                <connections>
+                                    <action selector="animationGroup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mkR-pn-poF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9i-W6-QqS">
+                                <rect key="frame" x="128" y="253" width="134" height="30"/>
+                                <state key="normal" title="CASpringAnimation"/>
+                                <connections>
+                                    <action selector="springAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sae-MZ-rpC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZEO-Ut-dEQ">
+                                <rect key="frame" x="20" y="306" width="374" height="248"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="myView" destination="CMk-9E-49j" id="WYn-Pr-c4g"/>
+                        <outlet property="testView" destination="ZEO-Ut-dEQ" id="smS-CG-Bn3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.jpg" width="1000" height="1000"/>
+    </resources>
+</document>
